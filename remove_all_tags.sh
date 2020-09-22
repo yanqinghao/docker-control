@@ -1,0 +1,1 @@
+docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 2 | xargs -I {} docker rmi $1:{}
