@@ -1,0 +1,1 @@
+docker images | grep des | awk '{ p=$1":"$2; print p}' | xargs docker rmi
